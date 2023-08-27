@@ -8,6 +8,18 @@
 // 4. Find the index of "banana".
 // 5. Print the length of the array.
 
+console.log('Answer 1: Basic Array Operations');
+
+const fruits = ["apple", "banana", "orange", "grape"];
+
+console.log("Before Fruit Added",fruits);
+
+fruits.push("watermelon");
+
+console.log("After Fruit Added",fruits);
+
+//---------------------------------------------------------------------------------------
+
 // Question 2: Array Manipulation
 
 // Given an array of numbers: [10, 20, 30, 40, 50].
@@ -15,6 +27,18 @@
 // 1. Double the value of each element in the array.
 // 2. Filter out numbers greater than or equal to 30.
 // 3. Calculate the sum of the remaining numbers.
+
+console.log("Answer 2: Array Manipulation");
+
+const numbers = [10, 20, 30, 40, 50];
+
+const doubledArray = numbers.map(element => element * 2);
+
+
+console.log("DoubleUp Numbers", doubledArray);
+
+//--------------------------------------------------------------------------------------------
+
 
 // Question 3: Array Iteration
 
@@ -24,17 +48,67 @@
 // "Name at index 1 is Bob"
 // ...
 
+console.log("Answer 3: Array Iteration");
+
+const aNames = ["Alice", "Bob", "Charlie", "David", "Eve"];
+
+/*
+        aNames.forEach((num, index) => {
+        console.log(index, num);
+} )
+ or
+*/
+
+    for (let i = 0; i < aNames.length; i++) {
+        console.log(`Name at index ${i} is ${aNames[i]}`);
+
+    }
+
+//or
+     //console.info("Index", aNames);
+
+//--------------------------------------------------------------------------------------------
+
 // Question 4: Array Sorting
 
 // Create an array of numbers: [8, 2, 10, 4, 6].
 // Sort the array in ascending order.
 // Sort the array in descending order.
 
+console.log("Answer 4: Array Sorting");
+
+const aNumber = [8, 2, 10, 4, 6];
+
+console.log("Numbers Before Sort", aNumber);
+
+const sortedNumbers = aNumber.sort((a, b) => a - b);
+
+console.log("Numbers After Sort", sortedNumbers);
+
+//--------------------------------------------------------------------------------------------
+
+
 // Question 5: Array Mapping and Reducing
 
 // Create an array of numbers: [5, 10, 15, 20, 25].
 // Using the map function, create a new array where each element is the double of the corresponding element in the original array.
 // Using the reduce function, calculate the product of all numbers in the original array.
+
+console.log("Answer 5: Array Mapping and Reducing");
+
+const bNumbers = [5, 10, 15, 20, 25];
+
+
+const bDoubledArray = bNumbers.map(bNumbers => bNumbers * 2);
+
+console.log(bDoubledArray); 
+
+// Using reduce() to calculate the product of all numbers
+
+const aProduct = bNumbers.reduce((acc, num) => {return acc + num}, 0);
+console.log("Total of Number", aProduct);
+
+//--------------------------------------------------------------------------------------------
 
 // Question 6: Multi-dimensional Array
 
@@ -43,11 +117,33 @@
 // Set the center cell to "X" and the top-right cell to "O".
 // Print the resulting 2D array.
 
+// NOT CLEARD
+
+//--------------------------------------------------------------------------------------------
+
+
 // Question 7: Array Searching
 
 // Create an array of strings: ["apple", "banana", "cherry", "date", "elderberry"].
 // Check if the array includes the string "cherry".
 // Find the first element that starts with the letter "e".
+    {
+        const Fruits = ["apple", "banana", "cherry", "date", "elderberry"];
+
+        console.log("Friuts", Fruits);
+        
+        const includesCherry = Fruits.includes("cherry");
+        
+        console.log("Fruit Founded is", includesCherry);
+
+        const startsWithE = Fruits.find(Fruits => Fruits.startsWith("e"));
+
+        console.log("Start with E Letter is", startsWithE);
+
+        
+    }
+
+
 
 // Question 8: Array Filtering and Mapping
 
