@@ -128,6 +128,8 @@ console.log("Total of Number", aProduct);
 // Check if the array includes the string "cherry".
 // Find the first element that starts with the letter "e".
     {
+        console.log("Answer 7: Array Searching");
+
         const Fruits = ["apple", "banana", "cherry", "date", "elderberry"];
 
         console.log("Friuts", Fruits);
@@ -143,7 +145,8 @@ console.log("Total of Number", aProduct);
         
     }
 
-
+//--------------------------------------------------------------------------------------------
+//--------------------------------------------------------------------------------------------
 
 // Question 8: Array Filtering and Mapping
 
@@ -151,15 +154,40 @@ console.log("Total of Number", aProduct);
 // Filter out the numbers that are divisible by 5.
 // Using the filtered array, create a new array where each element is the square of the corresponding number.
 
+
+//--------------------------------------------------------------------------------------------
+
 // Question 9: Array Concatenation
 
 // Create two arrays: ["apple", "banana", "cherry"] and ["date", "elderberry"].
 // Concatenate the two arrays into a single array.
 
+console.log("Answer 9: Array Concatenation");
+
+const fruits1 = ["apple", "banana", "cherry"];
+
+const fruits2 = ["date", "elderberry"];
+
+const concatenatedArray = fruits1.concat(fruits2);
+
+console.log(concatenatedArray);
+
+//--------------------------------------------------------------------------------------------
+
 // Question 10: Array Joining
 
 // Create an array of words: ["Hello", "world", "how", "are", "you"].
 // Join the words using a space as the separator and print the resulting string.
+
+console.log("Answer 10: Array Joining");
+
+const words = ["Hello", "world", "how", "are", "you"];
+
+const joinedString = words.join(" ");
+
+console.log(joinedString);
+
+//--------------------------------------------------------------------------------------------
 
 // Question 11: Array Splicing
 
