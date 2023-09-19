@@ -457,7 +457,7 @@ console.log(chunkedArray);
 // Split the array into chunks of size 3, and the last chunk can contain fewer elements if needed.
 
 
-console.log("Answer 24: Array Chunking with Remainder");
+
 
 /*
 const aNumbers = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
@@ -474,6 +474,7 @@ const testSort = splitIntoChunks(aNumbers, 3);
 console.log(testSort);
 */
 
+console.log("Answer 24: Array Chunking with Remainder");
 
 const aAnumbers = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
 
